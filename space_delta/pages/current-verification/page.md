@@ -1,9 +1,10 @@
-# Current claim-by-claim verification
+# Prior exact-certificate summary
 
-All six exact paper statements are **VERIFIED** by independently reconstructed
-proof certificates with complete scoped finite-domain corroboration. This is a
-forecastable evidence status, not a new judge score. The previous live judge
-score remains **4/12** until the evaluator judges this revision.
+This summary has been superseded by the current
+[judge-readable scorecard](#/00-scorecard) and six inlined claim pages. It
+remains current scientific evidence—not a historical rejected verifier—but the
+new pages are the canonical review path because they expose the proof and code
+directly. The live score before the new candidate is **6/12**.
 
 Source: arXiv:2605.26808v1, retrieved 2026-07-26 with SHA-256
 `62a56be95a07594b408b3f3f263d39d72259def46969e4df1c7c0bfcdba0bb49`.
