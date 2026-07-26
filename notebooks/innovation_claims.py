@@ -19,8 +19,9 @@ def _(mo):
     ![Evidence headline](https://raw.githubusercontent.com/MachineLearning-Nerd/icml26-repro-iSD2q5Tius-innovation-an-almost-characterization-of-hallucination/main/reports/claim-by-claim/images/headline.svg)
 
     This tutorial explains the already-produced evidence. It does not ask
-    Molab to rerun the formal reproduction. The current live judge score is
-    **6/12**; the candidate evidence below has not yet been judged.
+    Molab to rerun the formal reproduction. The live judge awarded **12/12**:
+    all six claims verified, overall quality high, at Space revision
+    `1454c59e31063fb5bec1d97886836ab66e59daa3`.
     """)
     return
 

@@ -5,10 +5,9 @@
 We reproduced the six theoretical claims selected by the live judge from
 [*Innovation: An Almost Characterization of Hallucination*](https://arxiv.org/abs/2605.26808).
 The original Space received **4/12**; after the first evidence release, the
-live judge recorded **6/12**. This new cumulative reproduction gives an honest
-evidence verdict of **VERIFIED for all six exact source statements** and adds
-native-scale corroboration plus inlined proof/code. A possible 12/12 remains a
-forecast, not a judge result.
+live judge recorded **6/12**. The cumulative native-proof release is now judged
+**12/12 (six VERIFIED claims, quality HIGH)** at Space revision
+[`1454c59e`](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/commit/1454c59e31063fb5bec1d97886836ab66e59daa3).
 
 The main correction is conceptual: Theorem 3.3 bounds
 `Pr[g(H)>0 | X]`, not the numerical hallucination mass `g(H)`. We rebuilt every
@@ -21,6 +20,8 @@ Hugging Face `cpu-upgrade` with a one-thread process; no GPU was used.
 - [Illustrated technical report](reports/claim-by-claim/report.md)
 - [Self-contained Marimo tutorial](notebooks/innovation_claims.py)
 - [Canonical candidate scorecard](space_delta/pages/00-scorecard/page.md)
+- [Published logbook](https://huggingface.co/spaces/DineshAI/iSD2q5Tius)
+- [Challenge leaderboard](https://icml-2026-agent-repro-challenge.static.hf.space/leaderboard.html)
 - [Pinned environment](uv.lock)
 
 ## Result summary
@@ -57,6 +58,7 @@ in 320,000 model evaluations.
 | [`orx/evaluator-visible-release-candidate`](https://github.com/MachineLearning-Nerd/icml26-repro-iSD2q5Tius-innovation-an-almost-characterization-of-hallucination/tree/orx/evaluator-visible-release-candidate) | Release gates and publication surface | `uv run --frozen python -m repro_campaign.run` | Claims 1–6 plus release gates VERIFIED | local CPU, 1-core budget |
 | [`orx/native-scale-inline-proof-release`](https://github.com/MachineLearning-Nerd/icml26-repro-iSD2q5Tius-innovation-an-almost-characterization-of-hallucination/tree/orx/native-scale-inline-proof-release) | 160,000-corpus native corroboration | `uv run --frozen python -m repro_campaign.run` | Claims 1–6 VERIFIED; native audit PASS | HF `cpu-upgrade`, 1 thread, 37s wall |
 | [`orx/judge-readable-native-proof-package`](https://github.com/MachineLearning-Nerd/icml26-repro-iSD2q5Tius-innovation-an-almost-characterization-of-hallucination/tree/orx/judge-readable-native-proof-package) | Inline proofs, code, numbers, controls | `uv run --frozen python -m repro_campaign.run` | 6 canonical pages and 89 release gates PASS | HF `cpu-upgrade`, 1 thread, 37s wall |
+| [`orx/final-native-proof-release-gates`](https://github.com/MachineLearning-Nerd/icml26-repro-iSD2q5Tius-innovation-an-almost-characterization-of-hallucination/tree/orx/final-native-proof-release-gates) | Final blind traversal and release regression | `uv run --frozen python -m repro_campaign.run` | Published revision judged 12/12, quality HIGH | HF `cpu-upgrade`, 1 thread, 37s wall |
 
 ## Reproduce
 

@@ -76,8 +76,8 @@ Every completed run used the inherited command
 `uv run --frozen python -m repro_campaign.run` and the same `uv.lock`.
 Historical exact-certificate runs used supervised local CPU. Native and
 judge-readable runs used HF `cpu-upgrade` because the first native runtime was
-uncertain; both completed in 37 seconds wall and about 20 seconds verifier
-time with a one-thread process. At $0.0005/minute, each 30-second running
+uncertain; all three formal HF runs completed in 37 seconds wall and about
+20 seconds verifier time with a one-thread process. At $0.0005/minute, each 30-second running
 interval cost nominally about $0.00025.
 
 The experiment lineage is:
@@ -91,8 +91,8 @@ The experiment lineage is:
 
 ## Assessment
 
-All six exact contracts are VERIFIED with HIGH confidence. The live score
-before this candidate is 6/12. The evidence does not promise 12/12:
-evaluator interpretation remains an external risk, and only the live judge can
-award points. Historical revisions remain preserved; current navigation makes
-the superseding verifier obvious while keeping every old page reachable.
+All six exact contracts are VERIFIED with HIGH confidence. The live judge
+awarded **12/12**, with all six claims `verified` and overall quality `high`, at
+Space revision `1454c59e31063fb5bec1d97886836ab66e59daa3` on
+2026-07-26T14:06:37Z. Historical revisions remain preserved; current navigation
+makes the superseding verifier obvious while keeping every old page reachable.
