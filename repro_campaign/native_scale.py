@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import math
 import random
-import time
 from dataclasses import dataclass
 
 
@@ -252,7 +251,6 @@ def run_regime(regime: Regime) -> dict[str, object]:
 
 
 def verify_native_scale() -> dict[str, object]:
-    started = time.perf_counter()
     regimes = {regime.name: run_regime(regime) for regime in REGIMES}
     return {
         "status": "PASS",
@@ -269,5 +267,4 @@ def verify_native_scale() -> dict[str, object]:
             ),
         },
         "regimes": regimes,
-        "runtime_seconds": round(time.perf_counter() - started, 6),
     }

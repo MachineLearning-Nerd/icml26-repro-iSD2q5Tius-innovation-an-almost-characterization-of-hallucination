@@ -1,0 +1,330 @@
+{
+  "regimes": {
+    "asymptotic": {
+      "claim_1": {
+        "O_subseteq_F_and_H_subseteq_U_passes": 40000,
+        "counterexamples": 0
+      },
+      "claim_2": {
+        "empirical_rate_wilson_95": [
+          0.9977619041426178,
+          0.9985924095057148
+        ],
+        "empirical_spike_hallucination_rate": 0.998225,
+        "exact_posterior_checks": 40000,
+        "mean_K_over_U": 0.0025020809120868534,
+        "mean_empirical_indicator_minus_conditional_floor": 0.0007270809120865651,
+        "mean_q_exact": 0.0016697160775112348,
+        "minimum_exact_margin_K_over_U_minus_q": 0.0005503026664665568,
+        "paired_difference_normal_95": [
+          0.00031457374821251355,
+          0.0011395880759606167
+        ]
+      },
+      "claim_3": {
+        "g_U_equals_p_U_checks": 40000,
+        "max_absolute_error": 0.0
+      },
+      "claim_4": {
+        "delta_0.15": {
+          "minimum_exact_conditional_probability_margin": 0.14804892690980043,
+          "required_probability": 0.85,
+          "scatter_fraction_satisfied": 1.0,
+          "spike_fraction_satisfied": 0.998225,
+          "valid_trials": 40000
+        },
+        "delta_0.30": {
+          "minimum_exact_conditional_probability_margin": 0.29804892690980045,
+          "required_probability": 0.7,
+          "scatter_fraction_satisfied": 1.0,
+          "spike_fraction_satisfied": 0.998225,
+          "valid_trials": 40000
+        },
+        "delta_0.50": {
+          "minimum_exact_conditional_probability_margin": 0.4980489269098004,
+          "required_probability": 0.5,
+          "scatter_fraction_satisfied": 1.0,
+          "spike_fraction_satisfied": 0.998225,
+          "valid_trials": 40000
+        }
+      },
+      "claim_5": {
+        "required_probability_mean": 0.9974979190879132,
+        "scatter_fraction_satisfied": 1.0,
+        "spike_fraction_satisfied": 0.998225
+      },
+      "claim_6": {
+        "calibrated": {
+          "checks": 40000,
+          "minimum_slack": 0.5882352941176471,
+          "nonzero_TV_exercised": false
+        },
+        "scatter": {
+          "checks": 40000,
+          "minimum_slack": 0.588235294117647,
+          "nonzero_TV_exercised": true
+        },
+        "spike": {
+          "checks": 40000,
+          "minimum_slack": 0.888205264087617,
+          "nonzero_TV_exercised": true
+        }
+      },
+      "configuration": {
+        "K": 50,
+        "N": 20000,
+        "corpus_draws": 20,
+        "innovation_budget": 0.3,
+        "seed": 26050001,
+        "trials": 40000
+      }
+    },
+    "moderate": {
+      "claim_1": {
+        "O_subseteq_F_and_H_subseteq_U_passes": 40000,
+        "counterexamples": 0
+      },
+      "claim_2": {
+        "empirical_rate_wilson_95": [
+          0.9560665557341366,
+          0.9599954689022423
+        ],
+        "empirical_spike_hallucination_rate": 0.958075,
+        "exact_posterior_checks": 40000,
+        "mean_K_over_U": 0.05035231443244351,
+        "mean_empirical_indicator_minus_conditional_floor": 0.008427314432465305,
+        "mean_q_exact": 0.04330602578313965,
+        "minimum_exact_margin_K_over_U_minus_q": 0.0050251256281407045,
+        "paired_difference_normal_95": [
+          0.006463256873771804,
+          0.010391371991158806
+        ]
+      },
+      "claim_3": {
+        "g_U_equals_p_U_checks": 40000,
+        "max_absolute_error": 0.0
+      },
+      "claim_4": {
+        "delta_0.15": {
+          "minimum_exact_conditional_probability_margin": 0.10477386934673372,
+          "required_probability": 0.85,
+          "scatter_fraction_satisfied": 1.0,
+          "spike_fraction_satisfied": 0.958075,
+          "valid_trials": 40000
+        },
+        "delta_0.30": {
+          "minimum_exact_conditional_probability_margin": 0.25477386934673374,
+          "required_probability": 0.7,
+          "scatter_fraction_satisfied": 1.0,
+          "spike_fraction_satisfied": 0.958075,
+          "valid_trials": 40000
+        },
+        "delta_0.50": {
+          "minimum_exact_conditional_probability_margin": 0.4547738693467337,
+          "required_probability": 0.5,
+          "scatter_fraction_satisfied": 1.0,
+          "spike_fraction_satisfied": 0.958075,
+          "valid_trials": 40000
+        }
+      },
+      "claim_5": {
+        "required_probability_mean": 0.9496476855675565,
+        "scatter_fraction_satisfied": 1.0,
+        "spike_fraction_satisfied": 0.958075
+      },
+      "claim_6": {
+        "calibrated": {
+          "checks": 40000,
+          "minimum_slack": 0.8415841584158416,
+          "nonzero_TV_exercised": false
+        },
+        "scatter": {
+          "checks": 40000,
+          "minimum_slack": 0.8415841584158417,
+          "nonzero_TV_exercised": true
+        },
+        "spike": {
+          "checks": 40000,
+          "minimum_slack": 1.1411559468289398,
+          "nonzero_TV_exercised": true
+        }
+      },
+      "configuration": {
+        "K": 100,
+        "N": 2000,
+        "corpus_draws": 15,
+        "innovation_budget": 0.3,
+        "seed": 26050002,
+        "trials": 40000
+      }
+    },
+    "near_boundary": {
+      "claim_1": {
+        "O_subseteq_F_and_H_subseteq_U_passes": 40000,
+        "counterexamples": 0
+      },
+      "claim_2": {
+        "empirical_rate_wilson_95": [
+          0.8423033939999265,
+          0.8493801791509934
+        ],
+        "empirical_spike_hallucination_rate": 0.845875,
+        "exact_posterior_checks": 40000,
+        "mean_K_over_U": 0.1693792742020142,
+        "mean_empirical_indicator_minus_conditional_floor": 0.015254274201925605,
+        "mean_q_exact": 0.15310362899039,
+        "minimum_exact_margin_K_over_U_minus_q": 0.006711409395973172,
+        "paired_difference_normal_95": [
+          0.011715859429697295,
+          0.018792688974153916
+        ]
+      },
+      "claim_3": {
+        "g_U_equals_p_U_checks": 40000,
+        "max_absolute_error": 0.0
+      },
+      "claim_4": {
+        "delta_0.15": {
+          "excluded": true,
+          "reason": "No trial satisfied the strict delta>K/|U| domain.",
+          "valid_trials": 0
+        },
+        "delta_0.30": {
+          "minimum_exact_conditional_probability_margin": 0.13892617449664435,
+          "required_probability": 0.7,
+          "scatter_fraction_satisfied": 1.0,
+          "spike_fraction_satisfied": 0.845875,
+          "valid_trials": 40000
+        },
+        "delta_0.50": {
+          "minimum_exact_conditional_probability_margin": 0.3389261744966443,
+          "required_probability": 0.5,
+          "scatter_fraction_satisfied": 1.0,
+          "spike_fraction_satisfied": 0.845875,
+          "valid_trials": 40000
+        }
+      },
+      "claim_5": {
+        "required_probability_mean": 0.8306207257979858,
+        "scatter_fraction_satisfied": 1.0,
+        "spike_fraction_satisfied": 0.845875
+      },
+      "claim_6": {
+        "calibrated": {
+          "checks": 40000,
+          "minimum_slack": 0.8823529411764706,
+          "nonzero_TV_exercised": false
+        },
+        "scatter": {
+          "checks": 40000,
+          "minimum_slack": 0.8823529411764706,
+          "nonzero_TV_exercised": true
+        },
+        "spike": {
+          "checks": 40000,
+          "minimum_slack": 1.1793020937188434,
+          "nonzero_TV_exercised": true
+        }
+      },
+      "configuration": {
+        "K": 50,
+        "N": 300,
+        "corpus_draws": 5,
+        "innovation_budget": 0.3,
+        "seed": 26050003,
+        "trials": 40000
+      }
+    },
+    "small_budget_control": {
+      "claim_1": {
+        "O_subseteq_F_and_H_subseteq_U_passes": 40000,
+        "counterexamples": 0
+      },
+      "claim_2": {
+        "empirical_rate_wilson_95": [
+          0.8456343356946141,
+          0.8526486036764662
+        ],
+        "empirical_spike_hallucination_rate": 0.849175,
+        "exact_posterior_checks": 40000,
+        "mean_K_over_U": 0.16938077729700107,
+        "mean_empirical_indicator_minus_conditional_floor": 0.018555777296913337,
+        "mean_q_exact": 0.15309611351545754,
+        "minimum_exact_margin_K_over_U_minus_q": 0.006711409395973172,
+        "paired_difference_normal_95": [
+          0.015048620790119687,
+          0.022062933803706986
+        ]
+      },
+      "claim_3": {
+        "g_U_equals_p_U_checks": 40000,
+        "max_absolute_error": 0.0
+      },
+      "claim_4": {
+        "delta_0.15": {
+          "excluded": true,
+          "reason": "No trial satisfied the strict delta>K/|U| domain.",
+          "valid_trials": 0
+        },
+        "delta_0.30": {
+          "minimum_exact_conditional_probability_margin": 0.13892617449664435,
+          "required_probability": 0.7,
+          "scatter_fraction_satisfied": 1.0,
+          "spike_fraction_satisfied": 0.849175,
+          "valid_trials": 40000
+        },
+        "delta_0.50": {
+          "minimum_exact_conditional_probability_margin": 0.3389261744966443,
+          "required_probability": 0.5,
+          "scatter_fraction_satisfied": 1.0,
+          "spike_fraction_satisfied": 0.849175,
+          "valid_trials": 40000
+        }
+      },
+      "claim_5": {
+        "required_probability_mean": 0.8306192227029989,
+        "scatter_fraction_satisfied": 1.0,
+        "spike_fraction_satisfied": 0.849175
+      },
+      "claim_6": {
+        "calibrated": {
+          "checks": 40000,
+          "minimum_slack": 0.8823529411764706,
+          "nonzero_TV_exercised": false
+        },
+        "scatter": {
+          "checks": 40000,
+          "minimum_slack": 0.8823529411764706,
+          "nonzero_TV_exercised": true
+        },
+        "spike": {
+          "checks": 40000,
+          "minimum_slack": 0.9293020937188434,
+          "nonzero_TV_exercised": true
+        }
+      },
+      "configuration": {
+        "K": 50,
+        "N": 300,
+        "corpus_draws": 5,
+        "innovation_budget": 0.05,
+        "seed": 26050004,
+        "trials": 40000
+      }
+    }
+  },
+  "scope": {
+    "framework": "finite Regular-Facts model with uniform K-subset worlds",
+    "maximum_universe_size": 20000,
+    "model_families": [
+      "scatter",
+      "spike",
+      "canonical calibrated coarsening"
+    ],
+    "regimes": 4,
+    "total_corpora": 160000,
+    "trials_per_regime": 40000,
+    "universal_claims_note": "Native-scale Monte Carlo is corroboration. Universal validity is established separately by exact symbolic certificates."
+  },
+  "status": "PASS"
+}
