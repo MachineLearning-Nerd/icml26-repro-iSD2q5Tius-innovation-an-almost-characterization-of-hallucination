@@ -35,6 +35,11 @@ Full source: [claim1.py](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resol
 - Native scale: `O⊆F` and `H⊆U` in 160,000/160,000 corpora through
   `|Ω|=20,000`.
 
+Download the [claim contract](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_1/claim_contract.json),
+[raw results](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_1/raw_results.json),
+[independent checker output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_1/independent_checker_output.json),
+and [negative-control output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_1/negative_control_output.json).
+
 ## Negative control and verdict
 
 Removing `O⊆F` permits `Ω=O={0}`, `F=∅`, and point-mass `g`, yielding
@@ -42,4 +47,3 @@ Removing `O⊆F` permits `Ω=O={0}`, `F=∅`, and point-mass `g`, yielding
 
 **VERIFIED.** The finite runs are corroboration; the set-inclusion certificate
 proves the universally quantified statement.
-

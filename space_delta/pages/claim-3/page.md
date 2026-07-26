@@ -34,6 +34,11 @@ For the canonical partition of observed singletons plus one `U` cell,
 on 160,000 corpora across four regimes and obtained
 `|g(U)-p(U)|=0.0` in every run.
 
+Download the [claim contract](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_3/claim_contract.json),
+[raw results](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_3/raw_results.json),
+[independent checker output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_3/independent_checker_output.json),
+and [negative-control output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_3/negative_control_output.json).
+
 ## Negative control and verdict
 
 With `p=(1/2,1/2)`, `O={0}`, and positive missing mass, removing exact
@@ -42,4 +47,3 @@ assumption-targeted failure.
 
 **VERIFIED.** The witness proof handles every partition; the native canonical
 construction is additional non-toy corroboration, not the universal argument.
-

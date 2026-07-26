@@ -44,6 +44,11 @@ Each row contains 40,000 corpora. Changing the innovation budget from 0.30 to
 0.05 leaves the probabilistic mechanism intact, which is a scale control rather
 than a bound-selected construction.
 
+Download the [claim contract](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_5/claim_contract.json),
+[raw results](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_5/raw_results.json),
+[independent checker output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_5/independent_checker_output.json),
+and [negative-control output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_5/negative_control_output.json).
+
 ## Negative control and verdict
 
 Strengthening the denominator from `K+1` to `K` is false: for `K=3`, uniform
@@ -52,4 +57,3 @@ false threshold `1/3`. The verifier requires this sharpened claim to fail.
 
 **VERIFIED.** The dichotomy is complete, the constant is sharp, and native
 scatter/spike models corroborate both proof branches.
-

@@ -46,6 +46,11 @@ asymptotic and moderate regimes were admissible and both exceeded 0.85.
 Near-boundary `δ=0.15` was explicitly excluded because no trial satisfied
 `δ>K/|U|`. Every exact conditional probability margin was strictly positive.
 
+Download the [claim contract](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_4/claim_contract.json),
+[raw results](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_4/raw_results.json),
+[independent checker output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_4/independent_checker_output.json),
+and [negative-control output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_4/negative_control_output.json).
+
 ## Negative control and verdict
 
 Removing Regular Facts and concentrating the posterior on the model's spike
@@ -54,4 +59,3 @@ gives event probability 0 against required 9/10. The control fails as intended.
 **VERIFIED.** The Markov derivation proves the quantified result, while both
 exact finite enumeration and native-scale runs exercise only admissible,
 strictly positive bounds.
-

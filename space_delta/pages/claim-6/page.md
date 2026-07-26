@@ -51,6 +51,11 @@ spike_tv = 0.5 * (
 )
 ```
 
+Download the [claim contract](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_6/claim_contract.json),
+[raw results](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_6/raw_results.json),
+[independent checker output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_6/independent_checker_output.json),
+and [negative-control output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_6/negative_control_output.json).
+
 ## Negative control and verdict
 
 Removing K-sparsity with nominal `K=1`,
@@ -61,4 +66,3 @@ weakened premise.
 
 **VERIFIED.** The cellwise proof covers every partition and every `g`; both
 exact enumeration and native models materially exercise miscalibration.
-

@@ -36,6 +36,11 @@ binomial identities
 `C(u-1,k)/C(u,k)=1-k/u`. Full source:
 [theorems.py](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/repro_campaign/theorems.py).
 
+Download the [claim contract](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_2/claim_contract.json),
+[raw results](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_2/raw_results.json),
+[independent checker output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_2/independent_checker_output.json),
+and [negative-control output](https://huggingface.co/spaces/DineshAI/iSD2q5Tius/resolve/main/.openresearch/artifacts/claim_2/negative_control_output.json).
+
 ## Native-scale measurement
 
 The spike model puts positive innovation mass on the first unseen statement.
@@ -59,4 +64,3 @@ fails for the intended missing assumption.
 
 **VERIFIED.** The symbolic certificate covers every admissible model; the
 native experiment independently corroborates its observable consequence.
-
