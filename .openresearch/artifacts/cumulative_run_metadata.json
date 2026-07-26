@@ -1,0 +1,11 @@
+{
+  "run_id": "f01d14d8-9c3d-4888-b80f-b6615509d55f",
+  "git_sha": "ab5399c447df51aaca30462132faad7e7ae83d04",
+  "fixed_command": "uv run --frozen python -m repro_campaign.run",
+  "environment": {"manager": "uv", "python": "3.13.7", "lockfile": "uv.lock", "marimo": "0.23.15"},
+  "compute": {"estimated_required_cores": 1, "selected_backend": "local", "selected_flavor": null, "process_thread_budget": 1, "actual_visible_logical_cpus": 8},
+  "openresearch_duration_seconds": 10,
+  "verifier_runtime_seconds": 7.837742,
+  "stochastic": false,
+  "seeds": []
+}

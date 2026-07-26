@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+<rect width="900" height="360" fill="#fff"/><text x="55" y="42" font-family="sans-serif" font-size="24" fill="#111827">Complete finite-domain checks (log scale)</text>
+<g font-family="sans-serif" font-size="16" fill="#374151"><text x="55" y="92">C1</text><text x="55" y="132">C2</text><text x="55" y="172">C3</text><text x="55" y="212">C4</text><text x="55" y="252">C5</text><text x="55" y="292">C6</text></g>
+<g fill="#4f46e5"><rect x="95" y="72" width="720" height="24"/><rect x="95" y="112" width="425" height="24"/><rect x="95" y="152" width="540" height="24"/><rect x="95" y="192" width="438" height="24"/><rect x="95" y="232" width="452" height="24"/><rect x="95" y="272" width="528" height="24"/></g>
+<g font-family="monospace" font-size="14" fill="#111827"><text x="825" y="90">2,736,552</text><text x="530" y="130">3,662</text><text x="645" y="170">56,105</text><text x="543" y="210">4,508</text><text x="557" y="250">5,862</text><text x="633" y="290">44,390</text></g>
+<text x="55" y="335" font-family="sans-serif" font-size="14" fill="#6b7280">Bars show corroboration scale; symbolic certificates establish universality.</text></svg>

@@ -1,0 +1,52 @@
+{
+  "cell_inequalities_checked": 8940,
+  "claim": 6,
+  "complete_finite_domain_models": 44390,
+  "exact_source_result": "For every partition Pi, g(U)>=p(U)/(K+1)-||g-p^Pi||_TV.",
+  "independent_checker": {
+    "coarsening_step": "Cellwise pPi(U\u2229B)>=p(U\u2229B)/(K+1), summed over Pi.",
+    "status": "PASS",
+    "variational_step": "TV(g,pPi)>=pPi(U)-g(U)"
+  },
+  "models_with_nonzero_miscalibration": 43390,
+  "negative_control": {
+    "K": 1,
+    "O": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "Pi": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "U": [
+      4
+    ],
+    "assumption_removed": "|supp(p)|<=K",
+    "claimed_rhs": "p(U)/(K+1)-TV = 1/4",
+    "expected_failure_observed": true,
+    "g_U": "1/5",
+    "g_equals_pPi": [
+      "1/5",
+      "1/5",
+      "1/5",
+      "1/5",
+      "1/5"
+    ],
+    "p": [
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/2"
+    ]
+  },
+  "status": "VERIFIED"
+}

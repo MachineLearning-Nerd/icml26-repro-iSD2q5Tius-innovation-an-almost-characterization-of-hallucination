@@ -8,50 +8,44 @@
     "icml2026-repro",
     "paper-iSD2q5Tius"
   ],
-  "updated_at": "2026-07-26T14:00:00+00:00",
+  "updated_at": "2026-07-25T16:03:16+00:00",
   "root": {
     "slug": "index",
-    "title": "Current verification",
+    "title": "Repro - Innovation in Language Models",
     "file": "pages/index.md",
     "children": [
       {
-        "slug": "current-verification",
-        "title": "Current verification — Claims 1–6",
-        "file": "pages/current-verification/page.md",
-        "children": []
-      },
-      {
         "slug": "overview",
-        "title": "Historical rejected baseline — Overview",
+        "title": "Overview",
         "file": "pages/overview/page.md",
         "children": []
       },
       {
         "slug": "claims",
-        "title": "Historical rejected baseline — Claims",
+        "title": "Claims",
         "file": "pages/claims/page.md",
         "children": []
       },
       {
         "slug": "evidence",
-        "title": "Historical rejected baseline — Evidence",
+        "title": "Evidence",
         "file": "pages/evidence/page.md",
         "children": []
       },
       {
         "slug": "verification-run",
-        "title": "Historical rejected baseline — Verification run",
+        "title": "Verification run",
         "file": "pages/verification-run/page.md",
         "children": []
       },
       {
         "slug": "conclusion",
-        "title": "Historical rejected baseline — Conclusion",
+        "title": "Conclusion",
         "file": "pages/conclusion/page.md",
         "children": []
       }
     ]
   },
-  "agent_view_tokens": 5000,
-  "revision": "candidate-claims-1-6"
+  "agent_view_tokens": 1380,
+  "revision": "1784995396405981054"
 }

@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "repository_type": "space",
+  "repository_id": "DineshAI/iSD2q5Tius",
+  "text_only": true,
+  "files": [
+    {"source": "space_delta/README.md", "target": "README.md"},
+    {"source": "space_delta/logbook.json", "target": "logbook.json"},
+    {"source": "space_delta/pages/index.md", "target": "pages/index.md"},
+    {"source": "space_delta/pages/current-verification/page.md", "target": "pages/current-verification/page.md"},
+    {"source": "space_delta/historical/judged-33ec740/README.md", "target": "historical/judged-33ec740/README.md"},
+    {"source": "space_delta/historical/judged-33ec740/logbook.json", "target": "historical/judged-33ec740/logbook.json"},
+    {"source": "space_delta/historical/judged-33ec740/pages/index.md", "target": "historical/judged-33ec740/pages/index.md"},
+    {"source": "repro_campaign/__init__.py", "target": "repro_campaign/__init__.py"},
+    {"source": "repro_campaign/run.py", "target": "repro_campaign/run.py"},
+    {"source": "repro_campaign/claim1.py", "target": "repro_campaign/claim1.py"},
+    {"source": "repro_campaign/independent_claim1.py", "target": "repro_campaign/independent_claim1.py"},
+    {"source": "repro_campaign/theorems.py", "target": "repro_campaign/theorems.py"},
+    {"source": "repro_campaign/release_checks.py", "target": "repro_campaign/release_checks.py"},
+    {"source": "pyproject.toml", "target": "pyproject.toml"},
+    {"source": "uv.lock", "target": "uv.lock"},
+    {"source": "release/upload_allowlist.json", "target": "release/upload_allowlist.json"},
+    {"source": "release/upload_manifest.sha256", "target": "release/upload_manifest.sha256"},
+    {"source": "release/evaluator_blind_red_team.md", "target": "release/evaluator_blind_red_team.md"},
+    {"source": "release/final_release_report.md", "target": "release/final_release_report.md"},
+    {"source": ".openresearch/artifacts/cumulative_run_metadata.json", "target": ".openresearch/artifacts/cumulative_run_metadata.json"},
+    {"source": ".openresearch/artifacts/historical/protected_space_manifest.sha256", "target": ".openresearch/artifacts/historical/protected_space_manifest.sha256"},
+    {"source": ".openresearch/artifacts/historical/source_audit.md", "target": ".openresearch/artifacts/historical/source_audit.md"},
+    {"source": ".openresearch/artifacts/historical/verdict_record.json", "target": ".openresearch/artifacts/historical/verdict_record.json"}
+  ],
+  "claim_groups": [
+    {
+      "source_prefix": ".openresearch/artifacts/claim_1",
+      "target_prefix": ".openresearch/artifacts/claim_1",
+      "files": [
+        "EVAL.md",
+        "claim_contract.json",
+        "independent_checker.py",
+        "independent_checker_output.json",
+        "limitations.md",
+        "method.md",
+        "negative_control_output.json",
+        "raw_results.json",
+        "run_metadata.json",
+        "source_audit.md",
+        "verifier.py"
+      ]
+    },
+    {
+      "source_prefix": ".openresearch/artifacts/claim_2",
+      "target_prefix": ".openresearch/artifacts/claim_2",
+      "files": [
+        "EVAL.md",
+        "claim_contract.json",
+        "independent_checker_output.json",
+        "limitations.md",
+        "method.md",
+        "negative_control_output.json",
+        "raw_results.json",
+        "source_audit.md",
+        "verifier.py"
+      ]
+    },
+    {
+      "source_prefix": ".openresearch/artifacts/claim_3",
+      "target_prefix": ".openresearch/artifacts/claim_3",
+      "files": [
+        "EVAL.md",
+        "claim_contract.json",
+        "independent_checker_output.json",
+        "limitations.md",
+        "method.md",
+        "negative_control_output.json",
+        "raw_results.json",
+        "source_audit.md",
+        "verifier.py"
+      ]
+    },
+    {
+      "source_prefix": ".openresearch/artifacts/claim_4",
+      "target_prefix": ".openresearch/artifacts/claim_4",
+      "files": [
+        "EVAL.md",
+        "claim_contract.json",
+        "independent_checker_output.json",
+        "limitations.md",
+        "method.md",
+        "negative_control_output.json",
+        "raw_results.json",
+        "source_audit.md",
+        "verifier.py"
+      ]
+    },
+    {
+      "source_prefix": ".openresearch/artifacts/claim_5",
+      "target_prefix": ".openresearch/artifacts/claim_5",
+      "files": [
+        "EVAL.md",
+        "claim_contract.json",
+        "independent_checker_output.json",
+        "limitations.md",
+        "method.md",
+        "negative_control_output.json",
+        "raw_results.json",
+        "source_audit.md",
+        "verifier.py"
+      ]
+    },
+    {
+      "source_prefix": ".openresearch/artifacts/claim_6",
+      "target_prefix": ".openresearch/artifacts/claim_6",
+      "files": [
+        "EVAL.md",
+        "claim_contract.json",
+        "independent_checker_output.json",
+        "limitations.md",
+        "method.md",
+        "negative_control_output.json",
+        "raw_results.json",
+        "source_audit.md",
+        "verifier.py"
+      ]
+    }
+  ]
+}

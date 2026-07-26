@@ -16,6 +16,7 @@ from pathlib import Path
 
 from repro_campaign.claim1 import verify_claim1
 from repro_campaign.independent_claim1 import independent_check
+from repro_campaign.release_checks import verify_release_candidate
 from repro_campaign.theorems import verify_claims_2_to_6
 
 
@@ -94,15 +95,17 @@ def main() -> None:
             json.dumps(claim_result, indent=2, sort_keys=True) + "\n",
             encoding="utf-8",
         )
+    release_checks = verify_release_candidate()
 
     result = {
-        "campaign_stage": "Exact certificates for Claims 1 through 6",
+        "campaign_stage": "Evaluator-visible release candidate",
         "claim_statuses": ["VERIFIED"] * 6,
         "historical_judge_points": 4,
         "historical_judge_max_points": 12,
         "historical_integrity_checks": checks,
         "claim_1": claim1,
         "claims_2_to_6": remaining,
+        "release_checks": release_checks,
         "raw_result_path": ".openresearch/artifacts/claim_1/raw_results.json",
         "compute": {
             "estimated_required_cores": 1,

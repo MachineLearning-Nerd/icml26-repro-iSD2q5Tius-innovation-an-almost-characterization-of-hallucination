@@ -1,0 +1,21 @@
+{
+  "all_tested_bounds_nonvacuous": true,
+  "claim": 4,
+  "complete_symmetric_domain_models": 4508,
+  "exact_source_result": "For every delta in (K/|U|,1), Pr[g(H)>=g(U)(1-K/(delta|U|))|X]>=1-delta.",
+  "negative_control": {
+    "K": 1,
+    "assumption_removed": "Regular Facts",
+    "bound": "9/10",
+    "delta": "1/10",
+    "event_probability": 0,
+    "expected_failure_observed": true,
+    "g": "point mass on 0",
+    "g_H": 0,
+    "posterior": "point mass on F={0}",
+    "required_probability": "9/10",
+    "u": 100
+  },
+  "status": "VERIFIED",
+  "symbolic_substitutions_checked": 2359
+}

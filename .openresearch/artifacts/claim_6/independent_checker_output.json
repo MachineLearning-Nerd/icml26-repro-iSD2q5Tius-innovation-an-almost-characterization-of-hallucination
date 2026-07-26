@@ -1,0 +1,1 @@
+{"coarsening_step":"pPi(U)>=p(U)/(K+1) cellwise","variational_step":"TV(g,pPi)>=pPi(U)-g(U)","status":"PASS"}

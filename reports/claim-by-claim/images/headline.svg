@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+<rect width="900" height="300" fill="#0b1020"/><text x="50" y="55" fill="#e6edf7" font-size="28" font-family="sans-serif">Exact claim contracts after reconstruction</text>
+<g font-family="sans-serif" font-size="18" text-anchor="middle"><rect x="50" y="95" width="800" height="82" rx="14" fill="#141c31"/>
+<text x="150" y="127" fill="#9ca8bd">Previous judged</text><text x="150" y="160" fill="#f59e0b" font-size="30">4 / 12</text>
+<text x="450" y="127" fill="#9ca8bd">Exact contracts</text><text x="450" y="160" fill="#34d399" font-size="30">6 / 6 VERIFIED</text>
+<text x="750" y="127" fill="#9ca8bd">Live score</text><text x="750" y="160" fill="#e6edf7" font-size="30">awaiting judge</text></g>
+<text x="50" y="230" fill="#9ca8bd" font-size="18" font-family="sans-serif">Proof certificates + complete scoped enumeration + independent checks + negative controls</text>
+<text x="50" y="264" fill="#64748b" font-size="15" font-family="sans-serif">VERIFIED is an evidence verdict, not awarded points.</text></svg>

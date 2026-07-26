@@ -1,0 +1,22 @@
+{
+  "claim": 5,
+  "complete_symmetric_domain_models": 5862,
+  "exact_source_result": "Pr[g(H)>=g(U)/(K+1)|X]>=1-K/|U|.",
+  "independent_checker": {
+    "sharpness_certificate": "Uniform g on K+1 unseen statements with uniform K-subset worlds attains g(H)=g(U)/(K+1) in every world.",
+    "status": "PASS"
+  },
+  "negative_control": {
+    "K": 3,
+    "actual_g_H_each_world": "1/4",
+    "event_probability": 0,
+    "expected_failure_observed": true,
+    "false_threshold": "1/3",
+    "g": "uniform on U",
+    "required_probability": "1/4",
+    "strengthened_false_bound": "g(U)/K instead of g(U)/(K+1)",
+    "u": 4
+  },
+  "status": "VERIFIED",
+  "symbolic_scatter_spike_cases_checked": 4500
+}
