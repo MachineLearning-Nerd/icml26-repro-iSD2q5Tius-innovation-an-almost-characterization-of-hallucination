@@ -1,0 +1,49 @@
+{
+  "space_id": "DineshAI/iSD2q5Tius",
+  "orid": "iSD2q5Tius",
+  "paper_title": "Innovation: An Almost Characterization of Hallucination",
+  "sha": "33ec740847185e0222abba902a35182e01a96015",
+  "judged_at": "2026-07-25T16:14:34+00:00",
+  "model": "zai-org/GLM-5.2",
+  "claims": [
+    {
+      "claim": "The paper defines innovation (Definition 3.1) as a language model assigning nonzero probability mass to statements not present in the training data, and shows via Observation 3.2 that hallucinating with positive probability implies the model innovates (Section 3).",
+      "verdict": "toy",
+      "evidence": "A synthetic FactModel with U_size=100, K=10 is constructed with g_U=0.15 and g_H=0.05 by parameter assignment, then the code checks both are positive — circular, on a small toy model, not a real language model setup."
+    },
+    {
+      "claim": "Theorem 3.3 shows that under K-Sparsity and Regular Facts assumptions, if the innovation mass g(U) > 0, the probability a model hallucinates is at least 1 - K/|U| (Theorem 3.3).",
+      "verdict": "inconclusive",
+      "evidence": "The code never checks g_H ≥ 1−K/|U|; instead it checks the trivially-true condition (1−K/|U|) > 0. The actual output shows g_H≈0.10 while the theorem's bound ranges from 0.40 to 0.90, which would contradict the theorem, but the test ignores this entirely."
+    },
+    {
+      "claim": "Proposition 3.4 shows that a calibrated model with any positive missing probability mass necessarily innovates (Proposition 3.4).",
+      "verdict": "toy",
+      "evidence": "Calibrated models are constructed by setting g_U = p_missing > 0, then the code asserts g_U > 0 — true by construction on a small synthetic model, not an independent verification of the proposition."
+    },
+    {
+      "claim": "Theorem 4.1 gives a Markov-style bound showing the hallucination rate satisfies g(H) ≥ g(U)(1 - K/(δ|U|)) with probability at least 1-δ (Theorem 4.1).",
+      "verdict": "inconclusive",
+      "evidence": "The bound evaluates to g_U*(1−K/(δ|U|)) = 0.2*(1−10/(0.1*100)) = 0.2*0 = 0.0, so checking g_H ≥ 0 is trivially true and provides no meaningful test of Theorem 4.1."
+    },
+    {
+      "claim": "Theorem 4.2 establishes a high-confidence bound where, with probability at least 1 - K/|U|, the hallucination rate satisfies g(H) ≥ g(U)/(K+1) (Theorem 4.2).",
+      "verdict": "toy",
+      "evidence": "The model is constructed with g_H=0.1 and the bound is g_U/(K+1)=0.2/11≈0.0182, so g_H ≥ bound holds trivially by parameter choice on a small synthetic model; the 500-trial Monte Carlo adds little since the construction guarantees the outcome."
+    },
+    {
+      "claim": "Proposition 4.3 lower-bounds the innovation rate by g(U) ≥ p(U)/(K+1) minus a miscalibration distance term, linking missing probability mass to innovation (Proposition 4.3).",
+      "verdict": "toy",
+      "evidence": "Only calibrated models (miscalibration=0 by construction) are tested, with a 0.5 generosity factor on the bound, on small synthetic models — the miscalibration term is never exercised, making this a partial toy check of the proposition."
+    }
+  ],
+  "overall": "The logbook attempts numerical verification of six theoretical claims using small synthetic FactModel instances (U_size=50–100), but the checks are largely circular or trivially satisfied by construction. Several tests are meaningless (Claim 4's bound evaluates to zero; Claim 2 never checks the actual theorem bound and its data would contradict it), so the reproduction does not credibly verify the paper's theorems.",
+  "quality": "low",
+  "dataset_source": {
+    "repository": "ICML-2026-agent-repro/verdicts",
+    "dataset_commit": "d022fcefc847e812f84abcbb93d988ce687652a3",
+    "download_sha256": "a0f9b633e75e253231d565bde9969ea8522655cb8fa5147a4a16054d7bee726e",
+    "selection_key": "space_id == DineshAI/iSD2q5Tius"
+  }
+}
+
