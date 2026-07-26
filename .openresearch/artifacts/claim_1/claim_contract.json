@@ -1,0 +1,30 @@
+{
+  "claim_id": 1,
+  "source": {
+    "paper": "arXiv:2605.26808v1",
+    "definition_anchor": "https://ar5iv.labs.arxiv.org/html/2605.26808#S3.Thmtheorem1",
+    "result_anchor": "https://ar5iv.labs.arxiv.org/html/2605.26808#S3.Thmtheorem2",
+    "source_sha256": "62a56be95a07594b408b3f3f263d39d72259def46969e4df1c7c0bfcdba0bb49"
+  },
+  "domain": {
+    "Omega": "finite statement set",
+    "X": "finite multiset over Omega",
+    "O": "set(X)",
+    "F": "support of the true document distribution",
+    "H": "Omega minus F",
+    "U": "Omega minus O",
+    "g": "any probability distribution A(X) over Omega"
+  },
+  "assumptions": [
+    "Every statement in X is sampled from the true document distribution, hence O subseteq F."
+  ],
+  "quantified_statement": "For every valid Omega, X, true world p, and predictive distribution g, g(H)>0 implies g(U)>0.",
+  "acceptance": [
+    "A generic machine-checked derivation establishes H subseteq U from O subseteq F.",
+    "Probability-measure monotonicity establishes g(H)<=g(U).",
+    "An independent checker reaches the same conclusion without importing the primary verifier.",
+    "A control that removes O subseteq F produces g(H)>0 and g(U)=0 and must fail."
+  ],
+  "failure_exit": "The fixed runner raises or exits nonzero on any failed certificate, exhaustive check, independent check, or negative control."
+}
+

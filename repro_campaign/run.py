@@ -14,6 +14,9 @@ import platform
 import time
 from pathlib import Path
 
+from repro_campaign.claim1 import verify_claim1
+from repro_campaign.independent_claim1 import independent_check
+
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / ".openresearch" / "artifacts" / "historical"
@@ -58,12 +61,23 @@ def main() -> None:
     if not all(checks.values()):
         raise SystemExit("Historical baseline integrity failure: " + json.dumps(checks))
 
+    claim1 = verify_claim1()
+    independent = independent_check()
+    claim1["independent_checker"] = independent
+    output_path = ROOT / ".openresearch" / "artifacts" / "claim_1" / "raw_results.json"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(
+        json.dumps(claim1, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+
     result = {
-        "campaign_stage": "Historical rejected baseline",
-        "claim_statuses": ["BLOCKED"] * 6,
+        "campaign_stage": "Claim 1 exact set certificate",
+        "claim_statuses": ["VERIFIED", "BLOCKED", "BLOCKED", "BLOCKED", "BLOCKED", "BLOCKED"],
         "historical_judge_points": 4,
         "historical_judge_max_points": 12,
-        "checks": checks,
+        "historical_integrity_checks": checks,
+        "claim_1": claim1,
+        "raw_result_path": ".openresearch/artifacts/claim_1/raw_results.json",
         "compute": {
             "estimated_required_cores": 1,
             "selected_backend": "local",
@@ -74,10 +88,7 @@ def main() -> None:
             "platform": platform.platform(),
         },
         "runtime_seconds": round(time.perf_counter() - started, 6),
-        "limitations": [
-            "This run audits immutable historical evidence; it verifies no paper claim.",
-            "The historical checks were judged TOY or INCONCLUSIVE and remain rejected.",
-        ],
+        "limitations": claim1["limitations"],
     }
     print("OPENRESEARCH_EVIDENCE_BEGIN")
     print(json.dumps(result, indent=2, sort_keys=True))
