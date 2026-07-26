@@ -16,6 +16,7 @@ from pathlib import Path
 
 from repro_campaign.claim1 import verify_claim1
 from repro_campaign.independent_claim1 import independent_check
+from repro_campaign.native_scale import verify_native_scale
 from repro_campaign.release_checks import verify_release_candidate
 from repro_campaign.theorems import verify_claims_2_to_6
 
@@ -95,6 +96,16 @@ def main() -> None:
             json.dumps(claim_result, indent=2, sort_keys=True) + "\n",
             encoding="utf-8",
         )
+    native_scale = verify_native_scale()
+    native_path = ROOT / ".openresearch" / "artifacts" / "native_scale" / "raw_results.json"
+    native_path.parent.mkdir(parents=True, exist_ok=True)
+    if native_path.exists():
+        committed = json.loads(native_path.read_text(encoding="utf-8"))
+        if committed != native_scale:
+            raise SystemExit("Native-scale evidence does not regenerate exactly")
+    native_path.write_text(
+        json.dumps(native_scale, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
     release_checks = verify_release_candidate()
 
     result = {
@@ -105,12 +116,14 @@ def main() -> None:
         "historical_integrity_checks": checks,
         "claim_1": claim1,
         "claims_2_to_6": remaining,
+        "native_scale": native_scale,
         "release_checks": release_checks,
         "raw_result_path": ".openresearch/artifacts/claim_1/raw_results.json",
         "compute": {
             "estimated_required_cores": 1,
-            "selected_backend": "local",
-            "selected_flavor": None,
+            "routing_reason": "uncertain native-scale runtime before measurement",
+            "selected_backend": "hf",
+            "selected_flavor": "cpu-upgrade",
             "process_thread_budget": 1,
             "actual_visible_logical_cpus": visible_cpus(),
             "python": platform.python_version(),
