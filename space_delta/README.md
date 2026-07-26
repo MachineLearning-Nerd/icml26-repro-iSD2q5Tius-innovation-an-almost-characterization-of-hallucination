@@ -5,6 +5,12 @@ colorFrom: blue
 colorTo: purple
 sdk: static
 pinned: false
+tags:
+  - trackio
+  - trackio-logbook
+  - open-experiment
+  - icml2026-repro
+  - paper-iSD2q5Tius
 ---
 
 # Current claim verification
