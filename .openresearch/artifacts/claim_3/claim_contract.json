@@ -1,0 +1,8 @@
+{
+  "claim_id": 3,
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2605.26808#S3.Thmtheorem4",
+  "assumptions": ["p(U)>0", "exact calibration: g=p^Pi for some partition Pi"],
+  "quantified_statement": "Every exactly calibrated predictive distribution with positive missing mass has g(U)>0.",
+  "acceptance": "Witness proof, complete distributions/observed-sets/partitions enumeration, independent witness check, and noncalibrated negative control all pass."
+}
+

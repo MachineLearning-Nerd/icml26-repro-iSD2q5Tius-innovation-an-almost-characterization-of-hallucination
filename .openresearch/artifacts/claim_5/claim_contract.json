@@ -1,0 +1,8 @@
+{
+  "claim_id": 5,
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2605.26808#S4.Thmtheorem2",
+  "assumptions": ["K-sparsity", "Regular Facts"],
+  "quantified_statement": "Pr[g(H)>=g(U)/(K+1) | X] >= 1-K/|U|.",
+  "acceptance": "Generic scatter/spike case split, complete symmetric finite corroboration, sharpness certificate, and strengthened-false-bound negative control all pass."
+}
+

@@ -16,6 +16,7 @@ from pathlib import Path
 
 from repro_campaign.claim1 import verify_claim1
 from repro_campaign.independent_claim1 import independent_check
+from repro_campaign.theorems import verify_claims_2_to_6
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -73,14 +74,35 @@ def main() -> None:
     output_path.write_text(
         json.dumps(claim1, indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )
+    remaining = verify_claims_2_to_6()
+    for claim_id, claim_result in remaining.items():
+        claim_path = (
+            ROOT
+            / ".openresearch"
+            / "artifacts"
+            / f"claim_{claim_id}"
+            / "raw_results.json"
+        )
+        claim_path.parent.mkdir(parents=True, exist_ok=True)
+        if claim_path.exists():
+            committed = json.loads(claim_path.read_text(encoding="utf-8"))
+            if committed != claim_result:
+                raise SystemExit(
+                    f"Claim {claim_id} raw evidence does not regenerate exactly"
+                )
+        claim_path.write_text(
+            json.dumps(claim_result, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
 
     result = {
-        "campaign_stage": "Claim 1 exact set certificate",
-        "claim_statuses": ["VERIFIED", "BLOCKED", "BLOCKED", "BLOCKED", "BLOCKED", "BLOCKED"],
+        "campaign_stage": "Exact certificates for Claims 1 through 6",
+        "claim_statuses": ["VERIFIED"] * 6,
         "historical_judge_points": 4,
         "historical_judge_max_points": 12,
         "historical_integrity_checks": checks,
         "claim_1": claim1,
+        "claims_2_to_6": remaining,
         "raw_result_path": ".openresearch/artifacts/claim_1/raw_results.json",
         "compute": {
             "estimated_required_cores": 1,

@@ -1,0 +1,9 @@
+{
+  "claim_id": 2,
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2605.26808#S3.Thmtheorem3",
+  "assumptions": ["K-sparsity", "Regular Facts", "g(U)>0"],
+  "quantified_statement": "Pr_{p~D_world}[g(H)>0 | X] >= 1-K/|U|.",
+  "interpretation_warning": "The bound is on posterior event probability, not the numerical mass g(H).",
+  "acceptance": "Generic q<=K/|U| certificate, complete symmetric-posterior corroboration, closed-form independent check, and Regular-Facts negative control all pass."
+}
+

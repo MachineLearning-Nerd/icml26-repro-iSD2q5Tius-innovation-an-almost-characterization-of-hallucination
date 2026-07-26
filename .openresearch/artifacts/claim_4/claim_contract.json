@@ -1,0 +1,8 @@
+{
+  "claim_id": 4,
+  "source_anchor": "https://ar5iv.labs.arxiv.org/html/2605.26808#S4.Thmtheorem1",
+  "assumptions": ["K-sparsity", "Regular Facts", "delta in (K/|U|,1)"],
+  "quantified_statement": "Pr[g(H)>=g(U)(1-K/(delta|U|)) | X] >= 1-delta.",
+  "acceptance": "Exact substitution proof, strictly positive bounds, complete symmetric finite corroboration, and Regular-Facts negative control all pass."
+}
+
