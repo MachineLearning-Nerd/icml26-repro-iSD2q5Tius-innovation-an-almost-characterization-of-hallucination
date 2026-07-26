@@ -1,0 +1,12 @@
+{
+  "counterexamples": 0,
+  "implementation": "independent bit-mask subset enumeration plus point-mass basis",
+  "omega_sizes": [
+    1,
+    7
+  ],
+  "point_masses_checked": 21324,
+  "relations_checked": 3279,
+  "status": "PASS"
+}
+

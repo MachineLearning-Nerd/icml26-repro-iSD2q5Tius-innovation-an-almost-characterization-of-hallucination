@@ -66,6 +66,10 @@ def main() -> None:
     claim1["independent_checker"] = independent
     output_path = ROOT / ".openresearch" / "artifacts" / "claim_1" / "raw_results.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    if output_path.exists():
+        committed = json.loads(output_path.read_text(encoding="utf-8"))
+        if committed != claim1:
+            raise SystemExit("Claim 1 raw evidence does not regenerate exactly")
     output_path.write_text(
         json.dumps(claim1, indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )

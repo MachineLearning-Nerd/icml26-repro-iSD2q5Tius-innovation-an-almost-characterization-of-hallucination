@@ -1,0 +1,11 @@
+{
+  "assumption_removed": "O subseteq F (training statements are factual)",
+  "Omega": [0],
+  "O": [0],
+  "F": [],
+  "g_H": 1,
+  "g_U": 0,
+  "expected_failure_observed": true,
+  "failure_reason": "The observed statement is declared non-factual, so H is not a subset of U."
+}
+

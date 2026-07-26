@@ -1,0 +1,28 @@
+{
+  "claim": 1,
+  "status": "VERIFIED",
+  "exact_source_result": "g(H)>0 implies g(U)>0",
+  "complete_finite_domain": {
+    "models_checked": 2736552,
+    "positive_hallucination_cases": 1844256,
+    "counterexamples": 0,
+    "scope": {
+      "omega_sizes": [1, 8],
+      "all_O_subseteq_F_pairs": true,
+      "all_probability_vectors": "integer weights / 4"
+    }
+  },
+  "independent_checker": {
+    "relations_checked": 3279,
+    "point_masses_checked": 21324,
+    "counterexamples": 0,
+    "status": "PASS"
+  },
+  "negative_control": {
+    "assumption_removed": "O subseteq F",
+    "g_H": 1,
+    "g_U": 0,
+    "expected_failure_observed": true
+  }
+}
+

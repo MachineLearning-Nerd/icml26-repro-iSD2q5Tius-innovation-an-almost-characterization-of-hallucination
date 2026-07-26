@@ -1,0 +1,13 @@
+{
+  "claim_id": 1,
+  "source": {
+    "paper": "arXiv:2605.26808v1",
+    "definition_anchor": "https://ar5iv.labs.arxiv.org/html/2605.26808#S3.Thmtheorem1",
+    "result_anchor": "https://ar5iv.labs.arxiv.org/html/2605.26808#S3.Thmtheorem2",
+    "source_sha256": "62a56be95a07594b408b3f3f263d39d72259def46969e4df1c7c0bfcdba0bb49"
+  },
+  "assumption": "O=set(X) subseteq F=supp(p)",
+  "quantified_statement": "For every valid finite Omega, X, p, and predictive distribution g, g(H)>0 implies g(U)>0.",
+  "acceptance": "Generic set certificate, independent checker, exact raw regeneration, and assumption-violating negative control all pass."
+}
+

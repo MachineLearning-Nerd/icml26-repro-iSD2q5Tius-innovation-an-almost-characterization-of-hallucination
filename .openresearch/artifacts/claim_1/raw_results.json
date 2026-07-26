@@ -1,0 +1,81 @@
+{
+  "claim": 1,
+  "complete_finite_domain": {
+    "counterexamples": 0,
+    "models_checked": 2736552,
+    "positive_hallucination_cases": 1844256,
+    "scope": {
+      "all_O_subseteq_F_pairs": true,
+      "all_probability_vectors": "integer weights / 4",
+      "omega_sizes": [
+        1,
+        8
+      ]
+    }
+  },
+  "exact_source_result": "g(H)>0 implies g(U)>0",
+  "independent_checker": {
+    "counterexamples": 0,
+    "implementation": "independent bit-mask subset enumeration plus point-mass basis",
+    "omega_sizes": [
+      1,
+      7
+    ],
+    "point_masses_checked": 21324,
+    "relations_checked": 3279,
+    "status": "PASS"
+  },
+  "limitations": [
+    "The exhaustive sweep is complete only for the explicitly stated finite rational domain.",
+    "Universality comes from the checked set-inclusion truth table and probability-measure monotonicity rule, not extrapolation from the sweep.",
+    "The paper's Language Model definition is an abstract mapping to a distribution; a neural LLM is not an additional theorem assumption."
+  ],
+  "negative_control": {
+    "F": [],
+    "O": [
+      0
+    ],
+    "Omega": [
+      0
+    ],
+    "assumption_removed": "O subseteq F (training statements are factual)",
+    "expected_failure_observed": true,
+    "failure_reason": "The observed statement is declared non-factual, so H is not a subset of U.",
+    "g_H": 1,
+    "g_U": 0
+  },
+  "status": "VERIFIED",
+  "symbolic_certificate": {
+    "derived_set_relation": "H = Omega\\F subseteq U = Omega\\O",
+    "measure_rule": "For every nonnegative probability measure g, H subseteq U implies g(H) <= g(U)",
+    "strict_implication": "g(H)>0 implies g(U)>0",
+    "universal_element_truth_table": [
+      {
+        "conclusion_H_implies_U": true,
+        "factual": false,
+        "observed": false,
+        "premise_O_implies_F": true
+      },
+      {
+        "conclusion_H_implies_U": true,
+        "factual": true,
+        "observed": false,
+        "premise_O_implies_F": true
+      },
+      {
+        "conclusion_H_implies_U": false,
+        "factual": false,
+        "observed": true,
+        "premise_O_implies_F": false
+      },
+      {
+        "conclusion_H_implies_U": true,
+        "factual": true,
+        "observed": true,
+        "premise_O_implies_F": true
+      }
+    ],
+    "valid_rows_checked": 3
+  }
+}
+
