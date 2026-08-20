@@ -1,5 +1,30 @@
 # Innovation vs. hallucination — claim-by-claim reproduction
 
+## Collection classification and audit boundary
+
+This repository is a **legacy/source workspace** for *Innovation: An Almost Characterization of Hallucination*
+(arXiv `2605.26808`, OpenReview `iSD2q5Tius`). It is preserved
+separately from the standardized canonical record at
+[`icml26-innovation-hallucination`](https://github.com/MachineLearning-Nerd/icml26-innovation-hallucination).
+
+The claim results and scores recorded below are historical results of this
+workspace. They are not new paper-level verifications performed while
+organizing the collection. The collection audit did not run the scientific
+implementation; the canonical record documents its own scoped status and
+limitations.
+
+### How the historical claim evidence is produced
+
+The claim table and experiment log below are the authoritative mapping from
+each paper claim to its producer, command, control, and evidence artifact. In
+this workspace, the six claim modules and native-proof/checker routes produce claim-specific evidence pages and raw artifacts, with the claim table below connecting each verdict to its producer.
+
+The former `orx/*` branches are historical workstreams, not additional final
+publication claims. Their purposes and tips are preserved in
+[`BRANCH_AUDIT.md`](BRANCH_AUDIT.md). Citation and author acknowledgment
+details are in [`CITATION.cff`](CITATION.cff) and
+[`AUTHOR_THANK_YOU.md`](AUTHOR_THANK_YOU.md).
+
 [![Open in molab](https://marimo.io/molab-shield.svg)](https://molab.marimo.io/github/MachineLearning-Nerd/icml26-repro-iSD2q5Tius-innovation-an-almost-characterization-of-hallucination/blob/main/notebooks/innovation_claims.py)
 
 We reproduced the six theoretical claims selected by the live judge from

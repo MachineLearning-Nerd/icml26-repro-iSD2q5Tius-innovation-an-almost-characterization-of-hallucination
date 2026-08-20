@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "Legacy/source workspace for Innovation: An Almost Characterization of Hallucination"
+type: software
+authors:
+  - family-names: Das
+    given-names: Nishant P.
+  - family-names: Srivastava
+    given-names: Piyush
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-legacy-innovation-hallucination"
+url: "https://github.com/MachineLearning-Nerd/icml26-legacy-innovation-hallucination"
+abstract: "Legacy/source workspace preserving the implementation, evidence artifacts, and branch history for the associated ICML 2026 reproduction record."
+keywords:
+  - reproduction
+  - ICML 2026
+references:
+  - type: article
+    title: "Innovation: An Almost Characterization of Hallucination"
+    authors:
+      - family-names: Das
+        given-names: Nishant P.
+      - family-names: Srivastava
+        given-names: Piyush
+    identifiers:
+      - type: arxiv
+        value: "2605.26808"
+    url: "https://arxiv.org/abs/2605.26808"
+
